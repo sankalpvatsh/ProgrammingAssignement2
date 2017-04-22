@@ -1,3 +1,8 @@
+## This script containg two functions, makeCacheMatrix and cacheSolve. 
+## 
+
+## v creates a list that stores and caches a matrix and its invert.
+
 makeCacheMatrix <- function(x = matrix()) {
 
 +makeCacheMatrix <- function(x = matrix()) { 
@@ -14,7 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 +                                                                                  
  }
  
- 
+ ## cacheSolve() retrieves the inverted matrix from the value cached by makeCacheMatrix()
+
      cacheSolve <- function(x, ...) {
      ## Return a matrix that is the inverse of 'x'
 +    inv <- x$getinverse()
